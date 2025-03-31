@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     simulation_result = simulate(DEFAULT_PARAMETERS, 0.9, config)
 
-    print("Day,\tMemoriszed,\tReview Count,\tLearn Count,\tCost Per Day,\tCorrect Per Day")
+    print("Day", "Memoriszed", "Review Count", "Learn Count", "Cost Per Day", "Correct Per Day", sep=',\t')
     print(
         *(
             ",\t".join(f"{a:.2f}" for a in [i, *t])
